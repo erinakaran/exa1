@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Menyembunyikan scroll bar */
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Mengatur lebar kontainer */
+    max-width: 1200px; /* Maksimal lebar kontainer */
+}
+
+.color-image {
+    width: 300px; /* Pastikan ukuran gambar sesuai */
+    height: auto;
+    margin: 20px 0;
+}
+
+#optionsContainer {
+    display: flex; /* Menggunakan flexbox */
+    flex-wrap: wrap; /* Membolehkan membungkus */
+    justify-content: center; /* Menyusun pilihan di tengah */
+    gap: 10px; /* Jarak antar pilihan */
+    margin-left: 20px; /* Jarak dari gambar */
+    max-width: 400px; /* Atur lebar maksimum untuk 2 kolom */
+}
+
+.option {
+    flex: 0 0 calc(50% - 10px); /* Mengatur lebar setiap pilihan menjadi 50% dikurangi gap */
+    padding: 20px; /* Tambahkan padding untuk ruang yang lebih besar */
+    border: 2px solid #ccc; /* Warna border */
+    border-radius: 8px; /* Menambahkan sudut yang lebih bulat */
+    cursor: pointer; /* Menunjukkan bahwa elemen dapat diklik */
+    transition: background-color 0.3s;
+    font-family: 'Fredoka', sans-serif; 
+    font-size: 18px; /* Ubah ukuran font untuk lebih besar */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+    color: white; /* Mengatur warna teks */
+}
+
+.option:hover {
+    opacity: 0.7; /* Menambahkan efek hover */
+}
+
+.option:hover {
+    opacity: 0.7; /* Menambahkan efek hover */
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+ color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    background-color: #0056b3;
+}

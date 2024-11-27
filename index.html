@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Warna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="game-title">Tebak Warna!</h1>
+        
+        <!-- Layar Awal -->
+        <div id="start-screen">
+            <h2>Selamat Datang di Permainan Warna!</h2>
+            <button id="nextButton">Mulai</button>
+        </div>
+
+        <!-- Input Nama Pemain -->
+        <div id="name-input" style="display:none;">
+            <label for="playerName">Masukkan Nama Anda:</label>
+            <input type="text" id="playerName" placeholder="Nama Anda" />
+            <button id="startButton">Mulai Permainan</button>
+        </div>
+
+        <!-- Instruksi Permainan -->
+        <div id="instructions" style="display:none;">
+            <p>Instruksi: Pilih warna yang sesuai dengan gambar di bawah ini dalam waktu 5 detik!</p>
+            <button id="startGameButton">Mulai Permainan</button>
+        </div>
+
+        <!-- Kontainer untuk Pertanyaan -->
+         <div id="game" style="display:none;">
+            <div style="display: flex; align-items: center;">
+                <img id="color-image" class="color-image" src="merah.jpg" alt="Warna" style="display:none;" />
+                <div id="optionsContainer" style="margin-left: 20px;"></div> <!-- Tambahkan margin kiri untuk jarak -->
+            </div>
+            <div id="timerDisplay" style="font-size: 18px; font-weight: bold; margin-top: 20px;"></div>
+            <div id="scoreDisplay" style="font-size: 18px; font-weight: bold; margin-top: 20px;">Skor: 0</div>
+            <div id="result"></div>
+            <button id="resetButton" style="display:none;">Main Lagi</button>
+       </div>
+    
+       <!-- Layar Akhir -->
+<div id="end-screen" style="display:none;">
+    <h1>Permainan Selesai!</h1>
+    <div id="player-name-display" style="font-size: 20px; font-weight: bold;"></div> <!-- Tempat untuk menampilkan nama pemain -->
+    <div id="final-score" style="font-size: 24px; font-weight: bold;"></div> <!-- Elemen untuk menampilkan skor akhir -->
+</div>
+    
+    <script src="script.js"></script>
+</div>
+
+</body>
+</html>
